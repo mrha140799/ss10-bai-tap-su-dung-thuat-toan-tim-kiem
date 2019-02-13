@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    let patt = /^[0]([9][78]|[3][0-9]{1})[0-9]{7}$/;
+    let arr = ['0971234566','0981234567','0312345678','0941234567'];
+    let arr1 = [];
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (patt.test(arr[i])) {
+            arr1[count] = arr[i];
+            count++;
+        }
+    }
+    document.write("Những số điện thoại thỏa mãn mạng viettel là : <br>");
+    for (let i = 0; i < arr1.length; i++) {
+        document.write(arr1[i]+"<br>");
+    }
+</script>
+</body>
+</html>
